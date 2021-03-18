@@ -1,0 +1,42 @@
+@import url("https://fonts.googleapis.com/css?family=Averia+Serif+Libre|Bubblegum+Sans|Caveat+Brush|Chewy|Lobster+Two");
+
+:root {
+	--primary-white: #fff;
+	--primary-grey: #a6a6a6;
+	--primary-gold: #e2ac5a;
+}
+
+nav {
+	background-color: #1e1f21 !important;
+}
+
+nav .nav_logo {
+	font-family: "Lobster";
+	font-size: 2.1rem;
+	font-weight: 800;
+	color: var(--primary-gold) !important;
+}
+nav .nav_logo > span {
+	font-family: "Lobster";
+	font-size: 2.1rem;
+	font-weight: 200;
+}
+
+nav a.nav-link {
+	font-weight: 500;
+	letter-spacing: 0.0275rem;
+	cursor: pointer;
+}
+
+.navbar-nav > li > a {
+	margin-left: 0.75rem;
+	margin-right: 0.75rem;
+	color: var(--primary-grey) !important;
+}
+.navbar-nav > li > a:hover {
+	color: var(--primary-gold) !important;
+}
+.navbar-nav > li > a.active,
+.navbar-nav > li > a.active:focus {
+	color: var(--primary-gold) !important;
+}
