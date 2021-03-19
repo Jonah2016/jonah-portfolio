@@ -1,5 +1,592 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 
+:root {
+	--primary-white: #fff;
+	--primary-grey: #a6a6a6;
+	--primary-gold: #e2ac5a;
+}
+
 body {
-	font-family: "Roboto" sans-serif;
+	font-family: "Roboto", sans-serif;
+}
+
+/* ======================== Header Particles ======================== */
+@media (max-width: 768px) {
+	.particles_canvas {
+		display: none;
+	}
+}
+
+/* ======================== Custom Buttons ======================== */
+button {
+	margin: 20px;
+}
+.custom_btn {
+	padding: 10px 25px;
+	font-weight: 500;
+	background: transparent;
+	outline: none !important;
+	cursor: pointer;
+	transition: all 0.3s ease;
+	position: relative;
+	display: inline-block;
+	color: var(--primary-gold);
+}
+/**** BTN No. 1 ****/
+.btn_1 {
+	border: 3px solid var(--primary-gold);
+}
+.btn_1:hover {
+	background: var(--primary-gold);
+	color: #fff;
+}
+.btn_1:active {
+	top: 2px;
+}
+
+/**** BTN No. 2 ****/
+.btn_2 {
+	border: none;
+	border-bottom: 3px solid var(--primary-gold);
+	border-left: 3px solid var(--primary-gold);
+}
+.btn_2:before,
+.btn_2:after {
+	position: absolute;
+	content: "";
+	right: 0;
+	top: 0;
+	background: var(--primary-gold);
+	transition: all 0.3s ease;
+}
+.btn_2:before {
+	height: 0%;
+	width: 2px;
+}
+.btn_2:after {
+	width: 0%;
+	height: 2px;
+}
+.btn_2:hover:before {
+	height: 100%;
+}
+.btn_2:hover:after {
+	width: 100%;
+}
+
+/**** BTN No. 3 ****/
+.btn_3 {
+	width: 130px;
+	height: 40px;
+	line-height: 42px;
+	padding: 0;
+	border: none;
+}
+.btn_3 span {
+	position: relative;
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+.btn_3:before,
+.btn_3:after {
+	position: absolute;
+	content: "";
+	right: 0;
+	top: 0;
+	background: var(--primary-gold);
+	transition: all 0.3s ease;
+}
+.btn_3:before {
+	height: 0%;
+	width: 2px;
+}
+.btn_3:after {
+	width: 0%;
+	height: 2px;
+}
+.btn_3:hover:before {
+	height: 100%;
+}
+.btn_3:hover:after {
+	width: 100%;
+}
+.btn_3 span:before,
+.btn_3 span:after {
+	position: absolute;
+	content: "";
+	left: 0;
+	bottom: 0;
+	background: var(--primary-gold);
+	transition: all 0.3s ease;
+}
+.btn_3 span:before {
+	width: 2px;
+	height: 0%;
+}
+.btn_3 span:after {
+	width: 0%;
+	height: 2px;
+}
+.btn_3 span:hover:before {
+	height: 100%;
+}
+.btn_3 span:hover:after {
+	width: 100%;
+}
+
+/**** BTN No. 4 ****/
+.btn_4 {
+	width: 130px;
+	height: 40px;
+	line-height: 42px;
+	padding: 0;
+	border: none;
+}
+.btn_4 span {
+	position: relative;
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+.btn_4:before,
+.btn_4:after {
+	position: absolute;
+	content: "";
+	right: 0;
+	top: 0;
+	background: var(--primary-gold);
+	transition: all 0.3s ease;
+}
+.btn_4:before {
+	height: 50%;
+	width: 2px;
+}
+.btn_4:after {
+	width: 20%;
+	height: 2px;
+}
+.btn_4:hover:before {
+	height: 100%;
+}
+.btn_4:hover:after {
+	width: 100%;
+}
+.btn_4 span:before,
+.btn_4 span:after {
+	position: absolute;
+	content: "";
+	left: 0;
+	bottom: 0;
+	background: var(--primary-gold);
+	transition: all 0.3s ease;
+}
+.btn_4 span:before {
+	width: 2px;
+	height: 50%;
+}
+.btn_4 span:after {
+	width: 20%;
+	height: 2px;
+}
+.btn_4 span:hover:before {
+	height: 100%;
+}
+.btn_4 span:hover:after {
+	width: 100%;
+}
+
+/**** BTN No. 5 ****/
+.btn_5 {
+	width: 130px;
+	height: 40px;
+	line-height: 42px;
+	padding: 0;
+	border: none;
+}
+.btn_5 span {
+	position: relative;
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+.btn_5:before,
+.btn_5:after {
+	position: absolute;
+	content: "";
+	right: 0;
+	bottom: 0;
+	background: var(--primary-gold);
+	transition: all 0.3s ease;
+}
+.btn_5:before {
+	height: 50%;
+	width: 2px;
+}
+.btn_5:after {
+	width: 20%;
+	height: 2px;
+}
+.btn_5:hover:before {
+	height: 100%;
+}
+.btn_5:hover:after {
+	width: 100%;
+}
+.btn_5 span:before,
+.btn_5 span:after {
+	position: absolute;
+	content: "";
+	left: 0;
+	top: 0;
+	background: var(--primary-gold);
+	transition: all 0.3s ease;
+}
+.btn_5 span:before {
+	width: 2px;
+	height: 50%;
+}
+.btn_5 span:after {
+	width: 20%;
+	height: 2px;
+}
+.btn_5 span:hover:before {
+	height: 100%;
+}
+.btn_5 span:hover:after {
+	width: 100%;
+}
+
+/**** BTN No. 6 ****/
+.btn_6 {
+	width: 130px;
+	height: 40px;
+	line-height: 42px;
+	padding: 0;
+	border: none;
+}
+.btn_6 span {
+	position: relative;
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+.btn_6:before,
+.btn_6:after {
+	position: absolute;
+	content: "";
+	height: 0%;
+	width: 2px;
+	background: var(--primary-gold);
+}
+.btn_6:before {
+	right: 0;
+	top: 0;
+	transition: all 0.1s ease;
+}
+.btn_6:after {
+	left: 0;
+	bottom: 0;
+	transition: all 0.1s 0.2s ease;
+}
+.btn_6:hover:before {
+	transition: all 0.1s 0.2s ease;
+	height: 100%;
+}
+.btn_6:hover:after {
+	transition: all 0.1s ease;
+	height: 100%;
+}
+.btn_6 span:before,
+.btn_6 span:after {
+	position: absolute;
+	content: "";
+	background: var(--primary-gold);
+}
+.btn_6 span:before {
+	left: 0;
+	top: 0;
+	width: 0%;
+	height: 2px;
+	transition: all 0.1s 0.1s ease;
+}
+.btn_6 span:after {
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	height: 2px;
+}
+.btn_6 span:hover:before {
+	width: 100%;
+}
+
+/**** BTN No. 7 ****/
+.btn_7 {
+	border: 3px solid var(--primary-gold);
+	transition: all 0.3s ease;
+	background: #f2f2f2;
+}
+.btn_7:before {
+	position: absolute;
+	content: " ";
+	z-index: -1;
+	width: 25%;
+	top: 50%;
+	left: -15%;
+	height: 2px;
+	background: var(--primary-gold);
+	transition: all 0.3s ease;
+}
+.btn_7:hover {
+	background: var(--primary-gold);
+	color: #fff;
+	border-color: var(--primary-gold);
+	padding-left: 30px;
+	padding-right: 20px;
+}
+.btn_7:hover:before {
+	left: -10%;
+}
+
+/**** BTN No. 8 ****/
+.btn_8 {
+	padding-left: 30px;
+	padding-right: 20px;
+	background: #f2f2f2;
+	border: 3px solid var(--primary-gold);
+	transition: all 0.3s ease;
+}
+.btn_8:before {
+	position: absolute;
+	content: " ";
+	z-index: -1;
+	width: 25%;
+	top: 50%;
+	left: -10%;
+	height: 2px;
+	background: var(--primary-gold);
+	transition: all 0.3s ease;
+}
+.btn_8:hover {
+	background: var(--primary-gold);
+	color: #fff;
+	border-color: transparent;
+	padding-left: 25px;
+	padding-right: 25px;
+}
+.btn_8:hover:before {
+	left: -15%;
+}
+
+/**** BTN No. 9 ****/
+.btn_9 {
+	background: #f2f2f2;
+	border: 3px solid var(--primary-gold);
+	transition: all 0.3s ease;
+}
+.btn_9:before,
+.btn_9:after {
+	position: absolute;
+	content: " ";
+	z-index: -1;
+	width: 25%;
+	top: 50%;
+	height: 2px;
+	background: var(--primary-gold);
+	transition: all 0.3s ease;
+}
+.btn_9:before {
+	left: -10%;
+}
+.btn_9:after {
+	right: -10%;
+}
+.btn_9:hover {
+	background: var(--primary-gold);
+	color: #fff;
+}
+.btn_9:hover:before {
+	left: -15%;
+}
+.btn_9:hover:after {
+	right: -15%;
+}
+
+/**** BTN No. 10 ****/
+.btn_10 {
+	background: #f2f2f2;
+	border: 3px solid var(--primary-gold);
+	transition: all 0.3s ease;
+}
+.btn_10:before,
+.btn_10:after {
+	position: absolute;
+	content: " ";
+	z-index: -1;
+	width: 25%;
+	top: 50%;
+	height: 2px;
+	background: var(--primary-gold);
+	transition: all 0.3s ease;
+}
+.btn_10:before {
+	left: -15%;
+}
+.btn_10:after {
+	right: -15%;
+}
+.btn_10:hover {
+	background: var(--primary-gold);
+	color: #fff;
+}
+.btn_10:hover:before {
+	left: -10%;
+}
+.btn_10:hover:after {
+	right: -10%;
+}
+
+/**** BTN No. 11 ****/
+.btn_11 {
+	background: #f2f2f2;
+	border: 3px solid var(--primary-gold);
+	transition: all 0.3s ease;
+}
+.btn_11:before,
+.btn_11:after {
+	position: absolute;
+	content: " ";
+	z-index: -1;
+	width: 25%;
+	top: 50%;
+	height: 2px;
+	background: var(--primary-gold);
+	transition: all 0.3s ease;
+}
+.btn_11:before {
+	left: -10%;
+}
+.btn_11:after {
+	right: -10%;
+}
+.btn_11:hover {
+	background: var(--primary-gold);
+	color: #fff;
+}
+.btn_11:hover:before {
+	left: 0%;
+}
+.btn_11:hover:after {
+	right: 0%;
+}
+
+/**** BTN No. 12 ****/
+.btn_12 {
+	border: 3px solid var(--primary-gold);
+	z-index: 1;
+}
+.btn_12:after {
+	position: absolute;
+	content: "";
+	width: 100%;
+	height: 0;
+	bottom: 0;
+	left: 0;
+	z-index: -1;
+	background: var(--primary-gold);
+	transition: all 0.3s ease;
+}
+.btn_12:hover {
+	color: #fff;
+}
+.btn_12:hover:after {
+	top: 0;
+	height: 100%;
+}
+.btn_12:active {
+	top: 2px;
+}
+
+/**** BTN No. 13 ****/
+.btn_13 {
+	border: 3px solid var(--primary-gold);
+	z-index: 1;
+}
+.btn_13:after {
+	position: absolute;
+	content: "";
+	width: 100%;
+	height: 0;
+	top: 0;
+	left: 0;
+	z-index: -1;
+	background: var(--primary-gold);
+	transition: all 0.3s ease;
+}
+.btn_13:hover {
+	color: #fff;
+}
+.btn_13:hover:after {
+	top: auto;
+	bottom: 0;
+	height: 100%;
+}
+.btn_13:active {
+	top: 2px;
+}
+
+/**** BTN No. 14 ****/
+.btn_14 {
+	border: 3px solid var(--primary-gold);
+	z-index: 1;
+}
+.btn_14:after {
+	position: absolute;
+	content: "";
+	width: 0;
+	height: 100%;
+	top: 0;
+	right: 0;
+	z-index: -1;
+	background: var(--primary-gold);
+	transition: all 0.3s ease;
+}
+.btn_14:hover {
+	color: #fff;
+}
+.btn_14:hover:after {
+	left: 0;
+	width: 100%;
+}
+.btn_14:active {
+	top: 2px;
+}
+
+/**** BTN No. 15 ****/
+.btn_15 {
+	border: 3px solid var(--primary-gold);
+	z-index: 1;
+}
+.btn_15:after {
+	position: absolute;
+	content: "";
+	width: 0;
+	height: 100%;
+	top: 0;
+	left: 0;
+	direction: rtl;
+	z-index: -1;
+	background: var(--primary-gold);
+	transition: all 0.3s ease;
+}
+.btn_15:hover {
+	color: #fff;
+}
+.btn_15:hover:after {
+	left: auto;
+	right: 0;
+	width: 100%;
+}
+.btn_15:active {
+	top: 2px;
 }

@@ -8,6 +8,7 @@
 
 nav {
 	background-color: #1e1f21 !important;
+	z-index: 999 !important;
 }
 
 nav .nav_logo {
